@@ -1,0 +1,169 @@
+/*Nav styles*/
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.leftside {
+    display: flex;
+    padding: 2.5px;
+}
+
+.nav-wrapper > .leftside > div {
+    margin-right:20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+
+.rightside {
+    display: flex;
+    font-family: "Lobster", sans-serif;
+}
+
+.logo-brand {
+
+    height:30px;
+    width: 30px;
+}
+
+.brand {
+    padding:2.5px;
+    position: relative;
+    top: 0;
+}
+.nav-link-wrapper {
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a {
+    color:black;
+}
+
+
+.active-nav-link {
+    border-bottom: 1px solid black
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+.content-wrapper {
+    background-color:black;
+}
+
+
+/*Parallax Styling*/
+html{
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+    color:#fff;
+    margin:0;
+    padding:0;
+    perspective:1px;    
+    transform-style:preserve-3d;
+    height:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-family: "Luna", sans-serif;
+}
+
+header {
+/*    box-sizing:border-box;*/
+    min-height:100vh;
+    padding:30vw 0 5vw;
+    position:relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header:before {
+    background: 50% 50% /cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    display: block;
+    background-image:url(Sea-Cliff-Bridge.jpg);
+    background-size:cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(3);
+    z-index: -1;
+    min-height:100vh;
+}
+
+
+header * {
+    font-weight:normal;
+    letter-spacing:0.2em;
+    text-align:center;
+    margin:0;
+    padding: 1em 0;
+}
+
+
+#underpara {
+    position:absolute;
+    background: #34495E;
+    margin-top:200px;
+    height:100%;
+    width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

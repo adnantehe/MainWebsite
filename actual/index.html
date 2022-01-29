@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+            <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">  
+            <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Finger+Paint&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="cssFiles/styles.css">
+        <script src="https://kit.fontawesome.com/1dc4c48319.js" crossorigin="anonymous"></script>    
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "nav-wrapper">
+				<div class = "leftside">
+					<div class = "nav-link-wrapper active-nav-link">
+						<a href= "index.html">Home</a>
+					</div>
+
+					<div class = "nav-link-wrapper">
+						<a href= "about.html">About</a>
+					</div>
+
+                    <div class = "nav-link-wrapper">
+                        <a href= "contact.html">Contact Us</a>
+                    </div>
+
+
+				</div>
+
+				<div class = "rightside">
+                    <img class = "logo-brand" src = "logo.png">
+					<div class = "brand">	
+			 			<div> ADNAN HAMEED</div>
+					</div>	
+				</div>
+
+			</div>
+            <div class = "content-wrapper">
+                <div class = "portfolio-items-wrapper">
+
+                    <div class= "portfolio-item-wrapper">  
+                        <div class = "portfolio-img-background" style= "background-image:url(japan.JPG)"></div>   
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                 The intriguing land of the Rising Sun
+                            </div>
+                        </div> 
+                    </div>
+
+
+
+                     <div class= "portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style= "background-image:url(nz.JPG)"></div>
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                Sunset in Queenstown, New Zealand
+                            </div>
+                         </div>
+                     </div>
+
+
+                     <div class= "portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style= "background-image:url(palm.JPG)"></div>
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                One hour north of Sydneys CBD lies the relaxing and tranquil Palm Beach.
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class= "portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style= "background-image:url(sign.JPG)"></div>
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                Candid moments in Sydneys Chinatown
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class= "portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style= "background-image:url(lisa.jpg)"></div>
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                Vivid Festival
+                            </div>
+
+                        </div>
+                    </div>
+                                                    
+                    
+                             
+  
+                    <div class= "portfolio-item-wrapper">
+                        <div class = "portfolio-img-background" style= "background-image:url(streetfood.jpg)"></div>
+                        <div class= "img-text-wrapper">
+                            <div class = "logo-wrapper">
+                                <img src = "">
+                            </div>
+                            <div class = "subtitle">
+                                Random street in Japan's Osaka, uncharacteristically quiet
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            
+                <div class = "social-wrapper">
+
+                    <div class="middle">
+                        <a class = "btn" href="https://www.facebook.com/adnan.t.hameed">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    
+            
+                        <a class = "btn" href="https://www.instagram.com/adnan.t.hameed/?hl=en">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+               
+                        <a class="btn" href="https://www.youtube.com/channel/UCsnxsn6AdWgIwHCYKijuBXw?view_as=subscriber">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+               
+
+                
+
+            </div>
+		</div>
+	</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem =>{
+        portfolioItem.addEventListener('mouseover',() => {
+           portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    
+         portfolioItem.addEventListener('mouseout',() => {
+           portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+
+
+    })
+
+</script>
+
+
+</html>
+
+
+
+
